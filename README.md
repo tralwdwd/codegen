@@ -1,16 +1,27 @@
 # codegen
 
-A new Flutter project.
+A TOTP code generator for Google Family Link, using a shared secret.
 
-## Getting Started
+## Usage
 
-This project is a starting point for a Flutter application.
+1. Enter your Family Link shared secret in the app.
+2. The app will display the current TOTP code and the time remaining until it expires.
 
-A few resources to get you started if this is your first Flutter project:
+## Build Instructions (Android)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Install dependencies:
+   ```sh
+   flutter pub get
+   ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. Generate the Android launcher icon (optional, requires your icon at `assets/icon/icon.png`):
+   ```sh
+   flutter pub run flutter_launcher_icons
+   ```
+
+3. Build and run the app on Android:
+   ```sh
+   flutter run
+   ```
+
+---
